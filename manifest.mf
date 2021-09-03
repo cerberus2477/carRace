@@ -1,0 +1,3 @@
+Main-Class: CarRace
+Class-Path: controller/Controller view/Car view/ButtonPanel 
+Class-Path: view/DisplayPanel view/MainWindow view/Track
