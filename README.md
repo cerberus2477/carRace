@@ -1,4 +1,4 @@
-= carRace
+# carRace
 
 Car race simulator.
 
