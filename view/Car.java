@@ -69,19 +69,20 @@ public class Car extends JComponent {
 	public String getName(){
 		return this.name;
 	}
-		
-	public void setSpeed(){
+
+	// EZ	
+	public void setRandomSpeed(){
 		Random random = new Random();
-		boolean booster = random.nextBoolean();
-		int newSpeedNum = random.nextInt(3) + 1;		
+		boolean isBooster = random.nextBoolean();
+		int newSpeed = random.nextInt(3) + 1;		
 		
-		if(booster) {
-			if(maxSpeed>(this.actSpeed + newSpeedNum)) {
-				this.actSpeed = this.actSpeed + newSpeedNum;
+		if(isBooster) {
+			if(maxSpeed>(this.actSpeed + newSpeed)) {
+				this.actSpeed = this.actSpeed + newSpeed;
 			}
 		}else {
-			if((this.actSpeed - newSpeedNum) >0){
-				this.actSpeed = this.actSpeed - newSpeedNum;
+			if((this.actSpeed - newSpeed) >0){
+				this.actSpeed = this.actSpeed - newSpeed;
 			}
 		}		
 	}	
